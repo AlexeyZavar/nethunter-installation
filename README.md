@@ -1,7 +1,7 @@
 # Intro
 We'll install it with [Linux Deploy](https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy)
 
-This instruction is for opp6t, but can be reproduced on the other devices (btw you need special nethunter kernel)
+This instruction is for op6t, but can be reproduced on the other devices (btw you need special nethunter kernel)
 
 # Stage 0: Installing dependences
 Install [DJY's](https://github.com/johanlike/DJY-Oneplus6-or-Oneplus6T-Nethunter-Andrax-Kernel) kernel
