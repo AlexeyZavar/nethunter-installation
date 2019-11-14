@@ -68,6 +68,14 @@ Nethunter contains 2 versions of "**iptables**", so default doesn't works for me
 
 Simply write "**mkdir -p /root/scripts  && mv /usr/sbin/iptables /root/scripts/ && ln -s /usr/sbin/iptables-legacy /usr/sbin/iptables**"
 
+#### VNC Server & Terminal window
+
+P.S. Thanks to @SymbianSyMoh
+
+For the people who were asking regarding the packages that breaks the terminals title window and other windows title bars, just avoid installing **ANYTHING** related to *XFCE window manager*, this need some careful as some related packages can be installed without your consent for example (when installing **kali-linux-nethunter** package), so the suggestion is to have a ***clean*** Linux Deploy installation with *LXDE window manager* and then to be careful with the anything packages related to *XFCE-\* window manager*.
+
+As the other issue of why sometimes the *VNC* is breaking, also avoid anything related to **TigerVNC**, just don’t install it or anything related and if installed, just remove it (**apt-get purge tiger\* -y**)
+
 #### HID
 
 Open Nethunter app -> USB Army -> USB Interface -> hid -> Set USB interface
