@@ -76,6 +76,10 @@ For the people who were asking regarding the packages that breaks the terminals 
 
 As the other issue of why sometimes the *VNC* is breaking, also avoid anything related to **TigerVNC**, just don’t install it or anything related and if installed, just remove it (**apt-get purge tiger\* -y**)
 
+#### /etc/profile: Required key not available
+
+Just write "**source /etc/profile && source /root/.bash_profile**"
+
 #### HID
 
 Open Nethunter app -> USB Army -> USB Interface -> hid -> Set USB interface
