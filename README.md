@@ -84,6 +84,41 @@ Just write "**source /etc/profile && source /root/.bash_profile**"
 
 Open Nethunter app -> USB Army -> USB Interface -> hid -> Set USB interface
 
+*or*
+
+Open Terminal -> Android SU and write:
+
+```sh
+setprop sys.usb.config win,hid
+setprop sys.usb.config win,mass_storage
+setprop sys.usb.config win,rndis
+setprop sys.usb.config win,hid,mass_storage
+setprop sys.usb.config win,rndis,hid
+setprop sys.usb.config win,rndis,mass_storage
+setprop sys.usb.config win,rndis,hid,mass_storage
+setprop sys.usb.config mac,hid
+setprop sys.usb.config mac,mass_storage
+setprop sys.usb.config mac,ecm
+setprop sys.usb.config mac,hid,mass_storage
+setprop sys.usb.config mac,ecm,hid
+setprop sys.usb.config mac,ecm,mass_storage
+setprop sys.usb.config mac,ecm,hid,mass_storage
+setprop sys.usb.config win,hid,adb
+setprop sys.usb.config win,mass_storage
+setprop sys.usb.config win,rndis
+setprop sys.usb.config win,hid,adb,mass_storage
+setprop sys.usb.config win,rndis,hid,adb
+setprop sys.usb.config win,rndis,mass_storage
+setprop sys.usb.config win,rndis,hid,adb,mass_storage
+setprop sys.usb.config mac,hid,adb
+setprop sys.usb.config mac,mass_storage
+setprop sys.usb.config mac,ecm
+setprop sys.usb.config mac,hid,adb,mass_storage
+setprop sys.usb.config mac,ecm,hid,adb
+setprop sys.usb.config mac,ecm,mass_storage
+setprop sys.usb.config mac,ecm,hid,adb,mass_storage
+```
+
 HID interface may not be displayed in Nethunter, but it does exists :)
 
 # Decorations
