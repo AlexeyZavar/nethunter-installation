@@ -1,10 +1,12 @@
-# Intro
+# NetHunter installation
+
+## Intro
 
 We'll install it with **[Linux Deploy](https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy)**
 
 This instruction is for OnePlus6(T), but can be reproduced on the other devices (btw you need special nethunter kernel)
 
-# Stage 0: Installing dependences
+## Stage 0: Installing dependences
 
 Install [DJY's](https://github.com/johanlike/DJY-Oneplus6-or-Oneplus6T-Nethunter-Andrax-Kernel) Android 9 kernel ([click to download](https://drive.google.com/file/d/1FrT25hp5VJnPVzrlnRIOBt3qpWHR811i) - Magisk v20.1 included) ***OR*** [kimocoder's](https://github.com/kimocoder) Android 10 kernel ([click to download](https://github.com/kimocoder/kernel_oneplus_sdm845))
 
@@ -14,7 +16,7 @@ Install [BusyBox from Magisk repo or from GitHub](https://github.com/Magisk-Modu
 
 You're ready!
 
-# Stage 1: Downloading rootfs & Linux Deploy
+## Stage 1: Downloading rootfs & Linux Deploy
 
 Download & install [Linux Deploy](https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy)
 
@@ -22,7 +24,7 @@ Download [kalifs](https://build.nethunter.com/kalifs/kalifs-latest/kalifs-armhf-
 
 Using any root file explorer, create folders at "*/data/local/nhsystem/kali-armhf*"
 
-# Stage 2: Installing Nethunter
+## Stage 2: Installing Nethunter
 
 Open **Linux Deploy** and set settings as shown on the [pictures (click)](https://imgur.com/a/6DxbfAQ)
 
@@ -32,7 +34,7 @@ Wait 5-7 minutes
 
 Then click STOP, wait, START
 
-# Stage 3: Configuring Nethunter
+## Stage 3: Configuring Nethunter
 
 Open Terminal -> Android SU
 
@@ -44,7 +46,7 @@ Finally, write "**apt update && apt upgrade -y && apt dist-upgrade -y**" to upda
 
 Now you can safely delete **Linux Deploy**
 
-# Troubleshooting
+## Troubleshooting
 
 #### apt update
 
@@ -121,11 +123,11 @@ setprop sys.usb.config mac,ecm,hid,adb,mass_storage
 
 HID interface may not be displayed in Nethunter, but it does exists :)
 
-# Decorations
+## Decorations
 
-## Zsh
+### Zsh
 
-### Installation
+#### Installation
 
 Do "**apt install zsh -y**"
 
@@ -133,7 +135,7 @@ Then we need to install [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) -
 
 Install it as default shell
 
-### dikiaap's dot files
+#### dikiaap's dot files
 
 I've installed [this](https://github.com/dikiaap/dotfiles) dot files, so they're working almost perfect.
 
@@ -153,15 +155,15 @@ apt-update() {
 
 If there'll be any problems:
 
-#### z
+##### z
 
 Run "**wget <https://raw.githubusercontent.com/rupa/z/master/z.sh> && mkdir ~/.zsh/plugins/z && mv z.sh ~/.zsh/plugins/z/z.sh**"
 
-#### .functions_private && .exports_private
+##### .functions_private && .exports_private
 
 Just create these files ("**touch ~/.functions_private && touch ~/.aliases_private**") or remove their references in ~/.zshrc
 
-#### Numpad buttons (PuTTY)
+##### Numpad buttons (PuTTY)
 
 Run "**touch ~/.numpad**", add in end of "*~/.zshrc*" "**source ~/.numpad**" add in this file these lines:
 
